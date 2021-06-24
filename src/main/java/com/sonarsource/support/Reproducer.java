@@ -10,6 +10,7 @@ public class Reproducer {
         }else {
             addMethodWithMissingComments();
         }
+        System.out.println(foo.length());
     }
 
 
