@@ -7,4 +7,12 @@ application {
     mainClass = 'com.sonarsource.support.Reproducer'
 }
 
+sonarqube {
+    properties {
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.branch.name", "feature-branch"
+        property "sonar.branch.target", "master"
+    }
+}
+
 

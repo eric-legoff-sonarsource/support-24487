@@ -1,3 +1,6 @@
 .gradle/
 /scannerwork/
 build
+.idea
+gradle
+gradlew*
