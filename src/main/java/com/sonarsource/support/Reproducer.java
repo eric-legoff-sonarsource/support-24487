@@ -8,7 +8,7 @@ public class Reproducer {
         if (foo.length() == 3) {
             System.exit(0);
         }else {
-            addMethodWithMissingComments()
+            addMethodWithMissingComments();
         }
     }
 
