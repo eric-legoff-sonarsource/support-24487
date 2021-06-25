@@ -11,6 +11,16 @@ public class Reproducer {
             addMethodWithMissingComments();
         }
         System.out.println(foo.length());
+
+        int target = -5;
+        int num = 3;
+
+
+        /* intentionally raising java:S2757*/
+        target =- num;
+        target =+ num;
+
+        System.out.println(target);
     }
 
 
@@ -21,7 +31,7 @@ public class Reproducer {
         int d = 4;
         int e = 5;
 
-        if (a + b +c + d +e == 42) {
+        if (a + b +c + d + e == 42) {
             System.exit(0);
         }
 
